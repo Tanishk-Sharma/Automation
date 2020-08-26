@@ -26,6 +26,44 @@ class ZipCreator:
         self.logger.info('Source/Destination Paths initialized')
 
     def create_zip(self):
-      pass
+      """ Zipping is performed here """
+        try:
+            self.logger.info('Zipping Files')
+            self.logger.debug('Source path format expected: folder\\filename.extension')
+            self.logger.debug('Destination path format expected: folder\\filename.zip')
+            self.logger.debug('Given Source path: ' + self.source_path)
+            self.logger.debug('Given Destination path: ' + self.destination_path)
 
+            ### Separating the source, destination paths into parameters for zip operations (shutil) ###
+            base_path = os.path.basename(self.destination_path)
+            self.logger.debug('base_path: ' + base_path)
+
+            name_of_zip_file = base_path.split('.')[0]
+            self.logger.debug('name_of_zip_file: ' + name_of_zip_file)
+
+            extension = base_path.split('.')[1]
+            self.logger.debug('extension: ' + extension)
+
+            zip_source = os.path.dirname(self.source_path)
+            self.logger.debug('zip_source: ' + zip_source)
+
+            zip_destination = os.path.basename(self.source_path.strip(os.sep))
+            self.logger.debug('zip_destination: ' + zip_destination)
+
+            shutil.make_archive(name_of_zip_file, extension, zip_source, zip_destination)
+            shutil.move('%s.%s' % (name_of_zip_file, extension), self.destination_path)
+
+            self.logger.info('SUCCESS: ' + base_path)
+
+        except Exception:
+            # exc_info=True will let us log the full error stack
+            self.logger.exception('ERROR', exc_info=True)
+
+
+print('Absolute path only')
+source = input('Source path: ')
+destination = input('Destination path: ')
+
+zipcreator = ZipCreator(source, destination)
+zipcreator.create_zip()
 
