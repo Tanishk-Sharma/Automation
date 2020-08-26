@@ -3,6 +3,7 @@ Let the machine take care of this!
 
 -------------------------------------
 
-Some basic tasks that tje machine can do within seconds:
+Manual tasks have been automated here:
 
 1. Zip Files
+2. FTP Upload
