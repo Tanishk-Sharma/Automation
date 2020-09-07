@@ -26,13 +26,14 @@ import requests
 import pandas as pd
 from datetime import datetime
 
-
+## PARAMETERS SET ##
 FROM_YEAR = 2009
 TO_YEAR = 2018
 FROM_MONTH = 1
 TO_MONTH = 12
 END_DATE = 28
 
+## Dataframe with column names ##
 df = pd.DataFrame(columns=['Average temperature (°F)', 'Average humidity (%)',
                            'Average dewpoint (°F)', 'Average barometer (in)',
                            'Average windspeed (mph)', 'Average gustspeed (mph)',
