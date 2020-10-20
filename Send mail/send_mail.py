@@ -105,9 +105,10 @@ def get_mail_site_smtp(mail_address):
 		if choice2 in ['N', 'n']:
 			return False
 
+###################################
+
 
 # Mail Address
-
 print("Enter details:")
 MAIL_ADDRESS = input('Your mail address: ')
 mail_address_valid = False
@@ -156,7 +157,8 @@ if choice in ['Y', 'y']:
 	for n in range(num_files):
 		filefull = input('Enter file\'s absolute path: ')
 		ATTACHMENTS.append(filefull)
-########################################
+###################################
+
 proceed = input('Proceed? Y/N:  ')
 if proceed in ['Y', 'y']:
 	email_sent_count = 0
