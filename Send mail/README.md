@@ -6,7 +6,15 @@ They help us relay messages to Clients, Teams, Users, etc.
 # Why automation?
 
 Through automation of sending mails, we give our scripts to communicate to us with either a Success or Error mail.
-This is widely used in IT allowing troubleshooting proactively and manage outages.
+It is helpful with communication to multiple teams/users about anything you want :
+* Script's run status - Success or Fail
+* Summary
+* Reports generation
+* Subscriptions
+ 
+the list goes on...
+
+This is also widely used in IT allowing troubleshooting proactively and manage outages.
 It is a form of alerting/notifying of some info.
 
 <hr/>
