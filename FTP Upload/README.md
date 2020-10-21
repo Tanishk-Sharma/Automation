@@ -17,7 +17,11 @@ There is also the concept of authorizing the external entitiy to access the FTP 
 The program takes some input to begin working: 
 * The location of the zipfile to upload
 * FTP credentials
+
 ... Yep, that's about it.
 
 There is another code where I take name of individual files and put them into a single zip file!
+
 See it <a href="https://github.com/Tanishk-Sharma/Automation/tree/master/Zip%20Creator#zip-creator">here</a>
+
+The 2 codes can be used together to form part of a pipeline! 
