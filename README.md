@@ -12,4 +12,4 @@ Please enter into the directories to read more about each program and how it rel
 
 * Zip Creator
 * FTP Upload
-
+* Send mail
