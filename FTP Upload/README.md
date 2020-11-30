@@ -10,6 +10,8 @@ That's where FTP comes into the picture. Lets say an external entity requires yo
 You can simply zip those files into a single zip file and place it on the FTP site.
 From there, the external entity can pick it up.
 
+(Btw, this is just one use case where FTP plays an important role. There can be other use cases also where file sharing can be done via FTP.)
+
 There is also the concept of authorizing the external entitiy to access the FTP site. But that's out of the scope of this program.
 
 # How does the program work?
